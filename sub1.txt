@@ -1,0 +1,7 @@
+
+int blubb = 150;
+int blubber = 50;
+
+blubb = blubb-blubber;
+
+System.out.println(blubb);

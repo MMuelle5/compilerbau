@@ -1,0 +1,12 @@
+public class RunMalWas {
+
+	public static void main(String[] args) throws IOException {
+
+		String blubb = "okeli dokeli so isches halt";
+		String blubb2 = "";
+		
+		blubb = blubb2;
+		
+		System.out.println(blubb2);
+	}
+}

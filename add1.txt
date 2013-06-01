@@ -1,0 +1,6 @@
+
+int blubb = 42;
+
+blubb = 42+99;
+
+System.out.println(blubb);

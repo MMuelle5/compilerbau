@@ -1,0 +1,25 @@
+public class Run {
+
+	public static void main(String[] args) throws IOException {
+
+		boolean isTrue = true;
+		
+		int blubb = 150;
+		int blubber = 50;
+		String falsch = "sollte nicht hierhin";
+		String richtig = "ok";
+		
+		if(blubb <= blubber) {
+			System.out.println(falsch);
+		}
+		else if(blubb == blubber) {
+			System.out.println(falsch);
+		}
+		else {
+			System.out.println(richtig);
+		}
+		
+		String ende = "Ende";
+		System.out.println(ende);	
+	}
+}

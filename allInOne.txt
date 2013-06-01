@@ -1,0 +1,42 @@
+public class Run {
+
+	public static void main(String[] args) throws IOException {
+		int blubb = 150;
+		int blubber = 50;
+
+		String resAdd = "das Resultat der Addition: ";
+		int add = blubb+blubber;
+		System.out.print(resAdd);
+		System.out.println(add);
+		
+		String resSub = "das Resultat der Subtraktion: ";
+		int sub = blubb-blubber;
+		System.out.print(resSub);
+		System.out.println(sub);
+		
+		blubb =150;
+		blubber= 50;
+		boolean isTrue = true;
+		isTrue = blubb < blubber;
+		String falsch = "falsch: ";
+		System.out.print( falsch );
+		System.out.println(isTrue);
+		
+		isTrue = blubb>blubber;
+		String ok = "ok: ";
+		System.out.print(ok);
+		System.out.println(isTrue);
+		
+		isTrue = blubb <= blubber;
+		System.out.print(falsch);
+		System.out.println(isTrue);
+		
+		isTrue = blubb >= blubber;
+		System.out.print(ok);
+		System.out.println(isTrue);
+		
+		isTrue = blubb == blubber;
+		System.out.print(falsch);
+		System.out.println(isTrue);
+	}
+}

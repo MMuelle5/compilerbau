@@ -1,0 +1,10 @@
+public class Run {
+
+	public static void main(String[] args) throws IOException {
+		int blubb = 42;
+		
+		blubb = 42+99;
+		
+		System.out.println(blubb);
+	}
+}
