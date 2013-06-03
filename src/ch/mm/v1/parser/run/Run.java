@@ -23,7 +23,7 @@ public class Run {
 	public static void main(String[] args) throws IOException {
 
 		if(args == null || args.length < 2) {
-			System.out.println("Es wurde kein File übergeben");
+			System.out.println("Fehler: Der Aufruf muss folgende Werte beinhalten: <<Input-File-Name>> <<Output-File-Name>>");
 		}
 		else {
 			start(args[0], args[1]);
@@ -72,17 +72,19 @@ public class Run {
 			bw = new BufferedWriter(new FileWriter(f));
 			for(String s : GenerateForSpim.getCommandMap().get(GenerateForSpim.DEFAULT_METHOD)) {
 				bw.write(s);
+				bw.newLine();
 			}
 			GenerateForSpim.getCommandMap().remove(GenerateForSpim.DEFAULT_METHOD);
 			
 			for(String key : GenerateForSpim.getCommandMap().keySet()) {
-				bw.write("");
+				bw.newLine();
 				for(String s : GenerateForSpim.getCommandMap().get(key)) {
 					bw.write(s);
+					bw.newLine();
 				}
 			}
 		} catch (IOException e) {
-			System.out.println("Unbekannter Fehler beim Schreibvorgang");
+			System.out.println("Fehler: Unbekannter Fehler beim Schreibvorgang");
 			throw e;
 		} finally {
 			if(bw != null) {
@@ -105,7 +107,7 @@ public class Run {
 				sb.append(s).append(" ");
 			}
 		} catch (IOException e) {
-			System.out.println("Unbekanntes oder Korruptes File");
+			System.out.println("Fehler: Unbekanntes oder Korruptes File");
 			throw e;
 		} finally {
 			if(br != null) {
