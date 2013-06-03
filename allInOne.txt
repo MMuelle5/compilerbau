@@ -14,6 +14,16 @@ public class Run {
 		System.out.print(resSub);
 		System.out.println(sub);
 		
+		String resDiv = "das Resultat der Division: ";
+		int div = blubb/blubber;
+		System.out.print(resDiv);
+		System.out.println(div);
+		
+		String resMul = "das Resultat der Multiplikation: ";
+		int mul = blubb*blubber;
+		System.out.print(resMul);
+		System.out.println(mul);
+		
 		blubb =150;
 		blubber= 50;
 		boolean isTrue = true;

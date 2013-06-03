@@ -6,6 +6,12 @@ import ch.mm.v1.scanner.base.Constants;
 import ch.mm.v1.scanner.base.Item;
 import ch.mm.v1.scanner.scan.Scanner;
 
+/**
+ * Wird bei einfachen mathematischen Funktionen, Vergleichen, als auch einfachen Zuweisungen
+ * aufgerufen
+ * @author MARIUS
+ *
+ */
 public class Expression {
 
 	public static void startExpression(Item i) {

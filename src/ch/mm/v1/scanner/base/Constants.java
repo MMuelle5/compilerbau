@@ -1,8 +1,13 @@
 package ch.mm.v1.scanner.base;
 
-import java.util.HashMap;
-import java.util.Map;
 
+/**
+ * 
+ * Klass, mit allen Zeichen oder Zuweisungen als Int-Konstante
+ * Achtung, es wurden nicht alle Zeichen Implementiert
+ * @author MARIUS
+ *
+ */
 public class Constants {
 
 	/*
@@ -59,14 +64,9 @@ public class Constants {
 	public final static int BEGIN= 61;
 	public final static int CLASS= 63;
 	public final static int EOF= 64;
+	public final static int CAST= 65;
 	public final static int SYSOUT = 70;
 	public final static int SYSOUTLINE = 71;
 	public final static int SYSREADER = 72;
 	
-	public final static Map<String, Integer> knownVars = new HashMap<String, Integer>() {
-		{
-			put("int", Constants.NUMBER);
-			put("String", Constants.STRING);
-		}
-	};
 }

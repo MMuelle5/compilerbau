@@ -2,6 +2,11 @@ package ch.mm.v1.codeGenerator;
 
 import ch.mm.v1.scanner.base.Item;
 
+/**
+ * Operations-Objekt, was von der Expression-Klasse abgefüllt wird und vom Code-Generator verwendet werden kann
+ * @author MARIUS
+ *
+ */
 public class Operation {
 
 	private int operator;

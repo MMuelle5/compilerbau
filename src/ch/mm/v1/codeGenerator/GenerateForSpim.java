@@ -8,6 +8,12 @@ import java.util.Map;
 import ch.mm.v1.scanner.base.Constants;
 import ch.mm.v1.scanner.base.Item;
 
+/**
+ * Backend bereich vom Compiler
+ * Generiert, aufgrund den vom Parser verarbeiteten Informationen, Assembler-Code
+ * @author MARIUS
+ *
+ */
 public class GenerateForSpim{
 
 	public static final String DEFAULT_METHOD = "main";
@@ -28,7 +34,7 @@ public class GenerateForSpim{
 		Operation x = oper.getSubOperX();
 		Operation y = oper.getSubOperY();
 
-		if(x != null && x.getSubOperX() != null) { //Es existieren sub-trees TODO zwischenresultate jeweils wegspeichern
+		if(x != null && x.getSubOperX() != null) {
 			GenerateForSpim.op2(x);
 			GenerateForSpim.op2(y);
 		}
@@ -71,7 +77,7 @@ public class GenerateForSpim{
 			command = "slt";
 			break;
 		case Constants.TIMES:
-			command = "mult";
+			command = "mul";
 			break;
 		case Constants.DIV:
 			command = "div";
@@ -80,9 +86,6 @@ public class GenerateForSpim{
 		if(command != null) {
 			GenerateForSpim.setCommand(command+" $a0, $a1, $a2");
 			workingTypeA0 = Constants.NUMBER;
-		}
-		else {
-			//TODO else, wenn x keine no
 		}
 	}
 	

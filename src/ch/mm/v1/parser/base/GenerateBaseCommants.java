@@ -10,6 +10,11 @@ import ch.mm.v1.scanner.base.Constants;
 import ch.mm.v1.scanner.base.Item;
 import ch.mm.v1.scanner.scan.Scanner;
 
+/**
+ * Erster Aufruf der Run Methode
+ * @author MARIUS
+ *
+ */
 public class GenerateBaseCommants {
 
 	public final static String DATA = ".data";
@@ -17,6 +22,11 @@ public class GenerateBaseCommants {
 
 	private static boolean isInIf;
 	private static String readerName;
+	
+	/**
+	 * Handelt die Klasse ab
+	 * Die Klasse kann n Methoden beinhalten und ruft diese der Reihe nach auf
+	 */
 	public static void parseClass() {
 		
 		Item i = null;
@@ -32,6 +42,10 @@ public class GenerateBaseCommants {
 		GenerateForSpim.finish();
 	}
 
+	/**
+	 * Handelt eine komplette Methode ab
+	 * @param item
+	 */
 	public static void parseMehtod(Item item) {
 		Item i = item;
 		
@@ -66,6 +80,11 @@ public class GenerateBaseCommants {
 		}
 	}
 
+	/**
+	 * Handelt einen separaten Bereich ab.
+	 * Endet jeweils mit einem {
+	 * Dies kann entweder von einer Schleife, einer if/else-Bedingung oder einem Ende der Methode stammen
+	 */
 	public static void nextStep() {
 		Item i = Scanner.get();
 		

@@ -1,5 +1,10 @@
 package ch.mm.v1.codeGenerator;
 
+/**
+ * Wird benötigt bei um Parameter zu einem spaeteren Zeitpunkt wieder zu finden
+ * @author MARIUS
+ *
+ */
 public class ObjectInfo {
 
 	private String name;

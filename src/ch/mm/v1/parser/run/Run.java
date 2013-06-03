@@ -19,8 +19,13 @@ public class Run {
 	 */
 	public static void main(String[] args) throws IOException {
 
+		if(args == null || args.length == 0) {
+			System.out.println("Es wurde kein File übergeben");
+		}
+		else {
+			start(args[0]);
+		}
 //		start("absolutStart.txt");
-//		System.out.println("==============================");
 //		start("add1.txt");
 //		start("add2.txt");
 //		start("sub1.txt");
@@ -30,7 +35,8 @@ public class Run {
 //		start("if.txt");
 //		start("whileAndIf.txt");
 //		start("differentMethod.txt");
-		start("input.txt");
+//		start("input.txt");
+		start("Gogogo.java");
 //		start("allInOne.txt");
 	}
 
@@ -54,15 +60,24 @@ public class Run {
 		}
 	}
 	private static String readFileToString(String fileName) throws IOException {
-		BufferedReader br = new BufferedReader(new FileReader(new File(fileName)));
-		
+		BufferedReader br = null;
 		StringBuilder sb = new StringBuilder();
-		String s = null;
 		
-		while((s = br.readLine()) != null) {
-			sb.append(s).append(" ");
+		try {
+			br = new BufferedReader(new FileReader(new File(fileName)));
+			
+			
+			String s = null;
+			
+			while((s = br.readLine()) != null) {
+				sb.append(s).append(" ");
+			}
+		} finally {
+			if(br != null) {
+				br.close();
+			}
 		}
 		
 		return sb.toString();
 	}
-	}
+}

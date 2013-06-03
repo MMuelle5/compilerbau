@@ -8,10 +8,11 @@ import ch.mm.v1.scanner.scan.Scanner;
 
 /**
  * Generiert ein Objekt
- *  TODO ev. nicht- falls das Objekt mit einer Konstante initialisiert wird --> Objekt wird direkt so angelegt
+ * - falls das Objekt ein String ist wird der Wert auch gleich zugeordnet
  * - falls das Objekt mit dem Wert eines anderen Objekts angelegt wird:
  * 		1. Adresse Reservieren
  * 		2. An der korrekten Stelle im Code Wert zuweisen 
+ *  Dies wird so gehandhapt, weil der Int-Wert auch als Expression daher kommen kann
  * @author Marius
  *
  */
@@ -25,9 +26,7 @@ public class ObjParser {
 		oi.setName(String.valueOf(i.getVal()));
 		
 		if(oi.getType() == Constants.STRING) {
-			if(i == null) {
-				
-			}
+			
 			if(Scanner.get().getSym() == Constants.BECOMES) {
 				Item val = Scanner.get();
 				if(val.getSym() == Constants.STRCONST) {
@@ -56,6 +55,9 @@ public class ObjParser {
 		
 		if(next.getSym() == Constants.BECOMES) {
 			next = Scanner.get();
+			if(next.getSym() == Constants.CAST) {
+				next = Scanner.get();
+			}
 			if(readerName != null && readerName.equals(next.getVal())) {
 				SystemCommands.readConsoleLine(oi);
 			}

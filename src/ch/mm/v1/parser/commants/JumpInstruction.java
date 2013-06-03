@@ -7,6 +7,14 @@ import ch.mm.v1.scanner.base.Constants;
 import ch.mm.v1.scanner.base.Item;
 import ch.mm.v1.scanner.scan.Scanner;
 
+/**
+ * Handelt die bedingten (if/else if/else), als auch die unbedingten Spruenge(Methodenaufrufe) ab
+ * Ebenfalls wird die While-Loop in dieser Klasse abgehandelt
+ * 		diese beinhaltet sowohl einen unbedingten Sprung (vom Ende der Schleife zum Anfang)
+ * 		als auch einen bedingten (Abbruchbedingung)
+ * @author MARIUS
+ *
+ */
 public class JumpInstruction {
 
 	private static String continueMehtod;

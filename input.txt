@@ -18,7 +18,6 @@ public class RemAndCountSpaces {
 		String ret = "die Zahl ist: ";
 		System.out.print(ret);
 		System.out.println(i);
-		System.out.println(b);
 		
 	}
 
