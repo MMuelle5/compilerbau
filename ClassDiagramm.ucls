@@ -1,0 +1,141 @@
+<class-diagram version="1.0.11" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" corner="BOTTOM_RIGHT" language="java" name="ch.mm.v1.parser.commants.JumpInstruction" 
+    project="CompilerJavaToMips" file="/CompilerJavaToMips/src/ch/mm/v1/parser/commants/JumpInstruction.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="889" y="290"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="2" corner="BOTTOM_RIGHT" language="java" name="ch.mm.v1.codeGenerator.GenerateForSpim" 
+    project="CompilerJavaToMips" file="/CompilerJavaToMips/src/ch/mm/v1/codeGenerator/GenerateForSpim.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="1203" y="362"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="3" corner="BOTTOM_RIGHT" language="java" name="ch.mm.v1.parser.commants.Expression" 
+    project="CompilerJavaToMips" file="/CompilerJavaToMips/src/ch/mm/v1/parser/commants/Expression.java" binary="false">    
+    <position height="-1" width="-1" x="873" y="659"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="4" corner="BOTTOM_RIGHT" language="java" name="ch.mm.v1.scanner.base.Item" project="CompilerJavaToMips" 
+    file="/CompilerJavaToMips/src/ch/mm/v1/scanner/base/Item.java" binary="false">    
+    <position height="-1" width="-1" x="300" y="692"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="5" corner="BOTTOM_RIGHT" language="java" name="ch.mm.v1.codeGenerator.Operation" 
+    project="CompilerJavaToMips" file="/CompilerJavaToMips/src/ch/mm/v1/codeGenerator/Operation.java" binary="false">    
+    <position height="-1" width="-1" x="877" y="924"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="6" corner="BOTTOM_RIGHT" language="java" name="ch.mm.v1.parser.commants.ObjParser" 
+    project="CompilerJavaToMips" file="/CompilerJavaToMips/src/ch/mm/v1/parser/commants/ObjParser.java" binary="false">    
+    <position height="-1" width="-1" x="892" y="68"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="7" corner="BOTTOM_RIGHT" language="java" name="ch.mm.v1.parser.run.Run" project="CompilerJavaToMips" 
+    file="/CompilerJavaToMips/src/ch/mm/v1/parser/run/Run.java" binary="false">    
+    <position height="-1" width="-1" x="373" y="-54"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="8" corner="BOTTOM_RIGHT" language="java" name="ch.mm.v1.scanner.scan.Scanner" project="CompilerJavaToMips" 
+    file="/CompilerJavaToMips/src/ch/mm/v1/scanner/scan/Scanner.java" binary="false">    
+    <position height="-1" width="-1" x="268" y="293"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="9" corner="BOTTOM_RIGHT" language="java" name="ch.mm.v1.parser.commants.SystemCommands" 
+    project="CompilerJavaToMips" file="/CompilerJavaToMips/src/ch/mm/v1/parser/commants/SystemCommands.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="884" y="488"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="10" corner="BOTTOM_RIGHT" language="java" name="ch.mm.v1.codeGenerator.ObjectInfo" 
+    project="CompilerJavaToMips" file="/CompilerJavaToMips/src/ch/mm/v1/codeGenerator/ObjectInfo.java" binary="false">    
+    <position height="-1" width="-1" x="1289" y="920"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="11" corner="BOTTOM_RIGHT" language="java" name="ch.mm.v1.parser.base.GenerateBaseCommants" 
+    project="CompilerJavaToMips" file="/CompilerJavaToMips/src/ch/mm/v1/parser/base/GenerateBaseCommants.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="619" y="126"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="12" corner="BOTTOM_RIGHT" language="java" name="ch.mm.v1.scanner.base.Constants" 
+    project="CompilerJavaToMips" file="/CompilerJavaToMips/src/ch/mm/v1/scanner/base/Constants.java" binary="false">    
+    <position height="-1" width="-1" x="96" y="514"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <association id="13">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="14" name="subOperY"/>      
+      <multiplicity id="15" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="16">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="17" name="item"/>      
+      <multiplicity id="18" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="19">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="20" name="subOperX"/>      
+      <multiplicity id="21" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="22">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="23" name="params"/>      
+      <multiplicity id="24" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
