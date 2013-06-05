@@ -64,6 +64,9 @@ public class GenerateForSpim{
 		case Constants.EQL:
 			command = "seq";
 			break;
+		case Constants.NEQ:
+			command = "sne";
+			break;
 		case Constants.GTR:
 			command = "sgt";
 			break;

@@ -87,6 +87,10 @@ public class Expression {
 			oper.setOperator(Constants.EQL);
 			Expression.simpleExpression(Scanner.get(), oper);
 		}
+		else if (i.getSym() == Constants.NEQ) {
+			oper.setOperator(Constants.NEQ);
+			Expression.simpleExpression(Scanner.get(), oper);
+		}
 		else if (i.getSym() == Constants.LEQ) {
 			oper.setOperator(Constants.LEQ);
 			Expression.simpleExpression(Scanner.get(), oper);

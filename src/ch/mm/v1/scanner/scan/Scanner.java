@@ -58,6 +58,7 @@ public class Scanner {
 			case '{': return getSymbol(Constants.LBRACE);
 			case '}': return getSymbol(Constants.RBRACE);
 			case '"': return getStringValue();
+			case '!': return getNeq();
 			}
 		}
 		
@@ -65,6 +66,16 @@ public class Scanner {
 		return Scanner.get();
 	}
 	
+	private static Item getNeq() {
+		pos ++;
+		if(Scanner.text.charAt(pos) == '=') {
+			pos++;
+			id++;
+			return new Item(id, Constants.NEQ);
+		}
+		return null;
+	}
+
 	private static Item getDash() {
 		pos++;
 		char c = Scanner.text.charAt(pos);
