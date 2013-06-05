@@ -107,7 +107,7 @@ public class Run {
 				sb.append(s).append(" ");
 			}
 		} catch (IOException e) {
-			System.out.println("Fehler: Unbekanntes oder Korruptes File");
+			System.out.println("Fehler: das einzulensende File ist entweder unbekannt oder korrupt");
 			throw e;
 		} finally {
 			if(br != null) {
